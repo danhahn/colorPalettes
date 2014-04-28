@@ -2,11 +2,11 @@
 
 Lets you compare two hex colors to.
 
- ## keyboard shortcuts
+## keyboard shortcuts
 
- * `a` - select left side
- * `s` - select right side
- * `esc` - cancel current selection
+* `a` - select left side
+* `s` - select right side
+* `esc` - cancel current selection
 
 ## node server
 
