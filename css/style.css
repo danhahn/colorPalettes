@@ -1,0 +1,78 @@
+body, html {
+	background: url(/images/dark_fish_skin.png);
+	height: 100%;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 100%;	
+}
+
+h2 {
+	color: #fff;
+}
+
+.color {
+	border: 10px solid rgba(0,0,0,.5);
+	height: 400px;
+	position: relative;
+	background-color: rgba(255,255,255,.5);
+	border-radius: 5px;
+}
+
+.inputBox {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 1s;
+}
+
+.inputBox.open {
+	max-height: 100px;
+}
+
+.inputBox > * {
+	display: flex;
+	align-items: stretch;
+	flex-direction: row;
+	
+	box-sizing: border-box;
+	
+	background-color: rgba(0,0,0,.5);
+	padding: 5px 0 0;
+}
+
+.inputBox input {
+	width: 80%;
+	border-radius: 4px 0 0 4px;
+}
+
+.inputBox button {
+	width: 20%;
+	border-radius: 0 4px 4px 0;
+}
+
+.colorList {
+	margin-top: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	min-height: 60px;
+	background-color: rgba(0,0,0,.4);
+	border-radius: 10px;
+}
+
+.colorList .square {
+	width: 105px;
+	height: 50px;
+	border: 5px solid rgba(0,0,0,.5);
+	border-radius: 5px;
+	text-align: center;
+	margin: 5px 0 5px 5px;
+	font-size: 25px;
+}
